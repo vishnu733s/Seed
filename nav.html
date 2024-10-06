@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="nav.css"> <!-- Link to the external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Logo and Title Section -->
+        <div class="logo">
+            <img src="seed.png" alt="Logo" class="logo-icon">
+            <span class="logo-title">Seed.</span> <!-- Title next to the logo -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="nav.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section-hero">
+        <video autoplay muted loop class="background-video">
+            <source src="nature.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1 class="hero-title">"Welcome to Seed"</h1>
+            <p class="hero-description">"Farming, simplified. Tools and tips to boost your yields and save time."</p>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <!-- Tools Section -->
+    <section id="tools" class="section-tools">
+        <div class="tools-content">
+            <h2 class="section-title">Tools</h2>
+            <p class="section-description">Explore our curated tools for agriculture, technology, and more!</p>
+
+            <div class="grid-container">
+                <a href="water.html" class="grid-item">
+                    <img src="drop.png" alt="Tool Icon 1" class="tool-icon1">
+                    <h3 class="tool-title">WATER</h3>
+                </a>
+                <a href="climate.html" class="grid-item">
+                    <img src="cloud-computing.png" alt="Tool Icon 2" class="tool-icon2">
+                    <h3 class="tool-title">CLIMATE</h3>
+                </a>
+                <a href="pest.html" class="grid-item">
+                    <img src="bug.png" alt="Tool Icon 3" class="tool-icon3">
+                    <h3 class="tool-title">PEST CONTROL</h3>
+                </a>
+                <a href="crops.html" class="grid-item">
+                    <img src="harvest.png" alt="Tool Icon 4" class="tool-icon4">
+                    <h3 class="tool-title">CROPS</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section-newsletter">
+        <div class="newsletter-content">
+            <h2 class="section-title">Subscribe to Our Newsletter</h2>
+            <p class="section-description">Stay updated with the latest tools, tips, and resources by signing up for our
+                newsletter.</p>
+            <form class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Seed. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

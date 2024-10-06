@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pest - Seed</title>
+    <link rel="stylesheet" href="pest.css"> <!-- Link to the external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Logo and Title Section -->
+        <div class="logo">
+            <img src="seed.png" alt="Logo" class="logo-icon">
+            <span class="logo-title">Seed.</span> <!-- Title next to the logo -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="nav.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section for Water -->
+    <section id="hero-water" class="section-hero">
+        <!-- <video autoplay muted loop class="background-video">
+            <source src="water.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <div class="hero-content">
+            <h1 class="hero-title">"PEST-CONTROL"</h1>
+            <p class="hero-description">Access real-time satellite insights and expert tools to optimize crop growth,
+                manage water resources, and make informed farming decisions. With NASA’s cutting-edge satellite data and
+                geospatial analytics, we help you boost productivity while preserving the environment.</p>
+
+            <!-- Interactive Calendar Section -->
+            <!-- <div class="calendar-picker-section">
+                <label for="calendar-picker" class="calendar-label">Choose a Date:</label>
+                <input type="date" id="calendar-picker" class="calendar-picker">
+            </div>
+        </div> -->
+
+    </section>
+
+    <!-- Water Section Content -->
+    <section id="water-content" class="content-wrapper">
+        <div class="grid-container">
+            <!-- Left Grid: Climate and Crop Input -->
+            <div class="left-grid feature-item">
+                <h2>Pest Risk Analyzer</h2>
+                <div class="hero-content">
+                    <p class="hero-description">Enter your climate and crop to predict potential pest threats.</p>
+
+                    <!-- Climate Input -->
+                    <label for="climate-input">Select Climate:</label>
+                    <select id="climate-input">
+                        <option value="" disabled selected>Select Climate</option>
+                        <option value="tropical">Tropical</option>
+                        <option value="dry">Dry</option>
+                        <option value="temperate">Temperate</option>
+                        <option value="continental">Continental</option>
+                        <option value="polar">Polar</option>
+                    </select>
+
+                    <!-- Crop Input -->
+                    <label for="crop-input">Enter Crop Name:</label>
+                    <input type="text" id="crop-input" placeholder="e.g., Rice, Wheat, Maize" />
+
+                    <!-- Submit Button -->
+                    <button id="fetch-pest-data-button">Check Potential Pests</button>
+                </div>
+            </div>
+
+            <!-- Right Grid: Pest Data Display -->
+            <div class="right-grid feature-item">
+                <h2>Potential Pests</h2>
+                <div class="image">
+                    <img id="pest-image" src="pest.png" alt="Pest Image" />
+                </div>
+                <div class="hero-content">
+                    <p class="hero-description">Predicted pests for your selected climate and crop.</p>
+
+                    <!-- Pest Information Display -->
+                    <div id="pest-data-container">
+                        <p id="pest-output">Enter climate and crop to see potential pest threats.</p>
+                        <!-- Pest Image Display -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Seed. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

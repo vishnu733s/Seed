@@ -1,0 +1,385 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+}
+
+h1, h2, p {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #65c71c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-title {
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+/* Line Animation */
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #022009;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    margin-top: 5px;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-links a:hover {
+    color: #28a745;
+}
+
+/* Hero Section Styles */
+.section-hero {
+    background-color: #33660c;
+    padding: 100px 50px;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Tools Section Styles */
+.section-tools {
+    background-color: #000000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+}
+
+.section-description {
+    font-size: 18px;
+    margin-top: 10px;
+    color: black;
+    font-size:medium;
+    font-family: 'Poppins';
+}
+
+/* Newsletter Section Styles */
+.section-newsletter {
+    background-color: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+    color: #000000;
+    margin: 2px 2px;
+    display: flex;
+    height:700px
+}
+
+.newsletter-content {
+    max-width: 700px;
+    height: 100%;
+    margin: 100px auto;
+}
+
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 2px solid #65c71c;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #65c71c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #4aa716;
+}
+
+.section-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 50px;
+    text-align: left;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Grid Styles */
+.section-tools {
+    background-color: #000000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+.grid-item {
+    background-color: #65c71c; /* Original green color */
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-gap: 30px;
+    transition: background-color 0.3s, transform 0.3s; /* Adding transition for smooth hover */
+}
+.grid-item:hover {
+    background-color: #7dd636; /* Lighter green color on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+.grid-item img {
+    width: 100%;
+}
+
+.tool-title {
+    font-size: 18px;
+}
+/* footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #33660c; /* Change to your preferred background color */
+    color: white; /* Change text color if needed */
+    text-align: center; /* Center align the text */
+    padding: 15px 0; /* Add padding for spacing */
+    z-index: 1000; /* Ensure the footer is above other content */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+/* Responsive Styles */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 5px;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-title {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 65%;
+    }
+
+    .newsletter-form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo-title {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0 5px;
+        gap: 10px;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+
+    .tool-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tool-title {
+        font-size: 16px;
+    }
+    .footer {
+        padding: 10px 0;
+    }
+}
+
